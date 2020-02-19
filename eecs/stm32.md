@@ -46,3 +46,22 @@
     
 ### Asynchronous Event
 - Asynchronous event is connected to an EXTI direct line.
+
+## Code / Programming
+### Functions Explaination
+```C
+    /* In stm32xx_it.c file which contains interrupt functions */
+    void SVC_Handler(void) {
+        // Supervisor calls interrupt handler
+        // This is a interrupt related to the ARM core
+        // usually used to request privileged operations
+        // or access to system resources from an operating system.
+    }
+    void PendSV_Handler(void) {
+        // PendSV means Pendable Service
+        // This is an interrupt request is used by the OS
+        // to force a context switch 
+        // if no other interrupt is active
+    }
+```
+### Add an interrupt handler
