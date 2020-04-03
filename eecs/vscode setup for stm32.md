@@ -66,6 +66,17 @@
                     "interface/stlink-v2-1.cfg",    // debugger type
                     "target/stm32f4x.cfg"           // controller family
                 ],
+
+                /* SWO configurations */
+                "swoConfig": {
+                    "enabled": true,
+                    "cpuFrequency": 170000000,
+                    "swoFrequency": 2000000,
+                    "source": "probe",
+                    "decoders": [
+                        { "type": "console", "label": "ITM", "port": 0 }
+                    ]
+                },
                 
                 /* Create a preLaunchTask to automate the build process.
                 In addition to this file, another file called tasks.json is needed*/
