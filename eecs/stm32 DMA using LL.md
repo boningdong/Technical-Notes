@@ -1,5 +1,7 @@
 # STM32 DMA using LL Library
 
+![Alt Text](https://github.com/boningdong/Technical-Notes/blob/master/eecs/imgs/DMA%20Diagram.png)
+
 ## Introduction
 This document records the general procedures to use STM32 DMAs.
 Several key points:
